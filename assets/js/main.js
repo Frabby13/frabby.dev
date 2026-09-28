@@ -27,8 +27,8 @@
   });
 
   /* ---------- Theme toggle (light / dark) ----------
-     The saved choice is applied early by the inline script in <head>;
-     without one, the system preference decides. */
+     The choice is kept for the browser session (sessionStorage) and applied
+     early by the inline script in <head>; without one, the system preference decides. */
   const root = document.documentElement;
   const systemLight = window.matchMedia("(prefers-color-scheme: light)");
   const currentTheme = () => root.getAttribute("data-theme") || (systemLight.matches ? "light" : "dark");
@@ -44,7 +44,7 @@
     btn.addEventListener("click", () => {
       const next = currentTheme() === "light" ? "dark" : "light";
       root.setAttribute("data-theme", next);
-      try { localStorage.setItem("theme", next); } catch (e) { /* storage unavailable */ }
+      try { sessionStorage.setItem("theme", next); } catch (e) { /* storage unavailable */ }
       syncThemeIcons();
     });
   });
