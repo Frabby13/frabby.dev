@@ -1,101 +1,109 @@
 /*
   iamfrabby.it — Tailwind CSS v4 source
-  --------------------------------------------------
-  Build:  npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch
-  --------------------------------------------------
+  Build:  npm run build   (watch: npm run watch)
 */
 @import "tailwindcss";
 
 /* ==================================================
-   THEME — design tokens (colors, fonts, animations)
+   THEME — design tokens
+   Dark values are the default; light values override
+   the same variables below (system preference or
+   data-theme="light" set by the toggle).
    ================================================== */
 @theme {
   /* Fonts */
-  --font-sans: "Space Grotesk", "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* Base surfaces (dark-first, no light theme by design) */
-  --color-ink: #050609;
-  --color-ink-soft: #090b12;
-  --color-surface: #0d0f18;
-  --color-surface-2: #12141f;
-  --color-surface-3: #171a28;
-  --color-border: #232738;
-  --color-border-soft: #1a1d2b;
+  /* Surfaces */
+  --color-ink: #0e1013;
+  --color-ink-soft: #121418;
+  --color-surface: #15181d;
+  --color-surface-2: #1b1f25;
+  --color-surface-3: #232830;
+  --color-border: #3a404b;
+  --color-border-soft: #2a2f37;
 
   /* Text */
-  --color-text: #e8eaf2;
-  --color-text-dim: #99a1b8;
-  --color-text-faint: #5c6379;
+  --color-text: #f3f4f6;
+  --color-text-dim: #c9ced8;
+  --color-text-faint: #9aa2b1;
 
-  /* Neon accents */
-  --color-neon-violet: #8b5cf6;
-  --color-neon-violet-2: #a78bfa;
-  --color-neon-blue: #22d3ee;
-  --color-neon-pink: #f472b6;
-  --color-neon-green: #34e89e;
-  --color-neon-amber: #fbbf24;
+  /* Single accent */
+  --color-accent: #4ade80;
+  --color-accent-hover: #86efac;
+  --color-on-accent: #0a1a10;
+
+  /* Status (only for "in arrivo" / "presto" markers) */
+  --color-warn: #fbbf24;
+
+  /* Code syntax (mini terminal only) */
+  --color-syntax-kw: #93c5fd;
+  --color-syntax-key: #f9a8d4;
+  --color-syntax-str: #86efac;
+  --color-syntax-num: #fcd34d;
 
   /* Radii */
   --radius-xl: 1rem;
   --radius-2xl: 1.5rem;
 
-  /* Custom animations (v4 auto-generates matching `animate-*` utilities) */
-  --animate-glow-pulse: glow-pulse 2.6s ease-in-out infinite;
-  --animate-gradient-x: gradient-x 6s ease infinite;
-  --animate-float: float 6s ease-in-out infinite;
-  --animate-float-slow: float 9s ease-in-out infinite;
-  --animate-blink-dot: blink-dot 1.8s ease-in-out infinite;
-  --animate-marquee: marquee 32s linear infinite;
+  /* Animations */
   --animate-fade-up: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  --animate-spin-slow: spin 14s linear infinite;
-  --animate-border-flow: border-flow 4s linear infinite;
 }
 
-/* ==================================================
-   KEYFRAMES
-   ================================================== */
-@keyframes glow-pulse {
-  0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px currentColor); }
-  50% { opacity: 0.55; filter: drop-shadow(0 0 14px currentColor); }
-}
-@keyframes gradient-x {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-14px); }
-}
-@keyframes blink-dot {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(52, 232, 158, 0.55); }
-  50% { opacity: 0.65; box-shadow: 0 0 0 6px rgba(52, 232, 158, 0); }
-}
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-@keyframes fade-up {
-  from { opacity: 0; transform: translateY(28px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes border-flow {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 200% 50%; }
-}
-@keyframes blink-caret {
-  0%, 49% { opacity: 1; }
-  50%, 100% { opacity: 0; }
-}
-
-/* ==================================================
-   BASE LAYER
-   ================================================== */
 @layer base {
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --color-ink: #fafaf7;
+      --color-ink-soft: #f2f2ee;
+      --color-surface: #ffffff;
+      --color-surface-2: #f2f2ee;
+      --color-surface-3: #e8e8e3;
+      --color-border: #c9cbc4;
+      --color-border-soft: #dcded8;
+      --color-text: #111418;
+      --color-text-dim: #3a404a;
+      --color-text-faint: #5a616d;
+      --color-accent: #166534;
+      --color-accent-hover: #14532d;
+      --color-on-accent: #ffffff;
+      --color-warn: #b45309;
+      --color-syntax-kw: #1d4ed8;
+      --color-syntax-key: #be185d;
+      --color-syntax-str: #15803d;
+      --color-syntax-num: #b45309;
+    }
+  }
+  :root[data-theme="light"] {
+    --color-ink: #fafaf7;
+    --color-ink-soft: #f2f2ee;
+    --color-surface: #ffffff;
+    --color-surface-2: #f2f2ee;
+    --color-surface-3: #e8e8e3;
+    --color-border: #c9cbc4;
+    --color-border-soft: #dcded8;
+    --color-text: #111418;
+    --color-text-dim: #3a404a;
+    --color-text-faint: #5a616d;
+    --color-accent: #166534;
+    --color-accent-hover: #14532d;
+    --color-on-accent: #ffffff;
+    --color-warn: #b45309;
+    --color-syntax-kw: #1d4ed8;
+    --color-syntax-key: #be185d;
+    --color-syntax-str: #15803d;
+    --color-syntax-num: #b45309;
+  }
+
   html {
     color-scheme: dark;
     scroll-behavior: smooth;
   }
+  @media (prefers-color-scheme: light) {
+    html:not([data-theme="dark"]) { color-scheme: light; }
+  }
+  html[data-theme="light"] { color-scheme: light; }
+
   body {
     background-color: var(--color-ink);
     color: var(--color-text);
@@ -103,110 +111,53 @@
     -webkit-font-smoothing: antialiased;
   }
   ::selection {
-    background-color: var(--color-neon-violet);
-    color: white;
+    background-color: var(--color-accent);
+    color: var(--color-on-accent);
   }
-  /* thin neon scrollbar */
-  ::-webkit-scrollbar { width: 10px; height: 10px; }
-  ::-webkit-scrollbar-track { background: var(--color-ink); }
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(var(--color-neon-violet), var(--color-neon-blue));
-    border-radius: 999px;
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
   }
 }
 
 /* ==================================================
-   CUSTOM UTILITIES (v4 @utility API)
+   KEYFRAMES
    ================================================== */
-
-/* Gradient text — headline accents */
-@utility text-gradient {
-  background-image: linear-gradient(90deg, var(--color-neon-violet), var(--color-neon-blue) 45%, var(--color-neon-pink) 90%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-@utility text-gradient-static {
-  background-image: linear-gradient(90deg, var(--color-neon-violet), var(--color-neon-blue));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+@keyframes blink-caret {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
 }
 
-/* Glassmorphism panels */
-@utility glass {
-  background-color: color-mix(in oklab, var(--color-surface) 55%, transparent);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
-  border: 1px solid color-mix(in oklab, white 8%, transparent);
-}
-@utility glass-strong {
-  background-color: color-mix(in oklab, var(--color-surface-2) 75%, transparent);
-  backdrop-filter: blur(24px) saturate(160%);
-  -webkit-backdrop-filter: blur(24px) saturate(160%);
-  border: 1px solid color-mix(in oklab, white 10%, transparent);
-}
-
-/* Animated gradient border (wrap a card, child needs bg-surface) */
-@utility border-gradient-x {
-  position: relative;
-  background: linear-gradient(var(--color-surface), var(--color-surface)) padding-box,
-    linear-gradient(90deg, var(--color-neon-violet), var(--color-neon-blue), var(--color-neon-pink), var(--color-neon-violet)) border-box;
-  background-size: 100% 100%, 200% 100%;
-  border: 1px solid transparent;
-  animation: var(--animate-border-flow);
-}
-
-/* Dot-grid background, used on hero / section backdrops */
-@utility bg-grid {
-  background-image: radial-gradient(circle, color-mix(in oklab, white 14%, transparent) 1px, transparent 1px);
-  background-size: 28px 28px;
-}
-
-/* Cursor spotlight — JS sets --mx / --my custom properties on this element */
-@utility spotlight {
-  position: relative;
-  isolation: isolate;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background: radial-gradient(600px circle at var(--mx, 50%) var(--my, 50%), color-mix(in oklab, var(--color-neon-violet) 15%, transparent), transparent 70%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-  }
-
-  &:hover::before {
-    opacity: 1;
-  }
-}
+/* ==================================================
+   CUSTOM UTILITIES
+   ================================================== */
 
 /* Scroll-reveal primitives (paired with assets/js/main.js IntersectionObserver) */
 @utility reveal {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(20px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 @utility reveal-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Blinking terminal caret, appended after the last typed character (paired with assets/js/main.js typewriter engine) */
+/* Blinking terminal caret (paired with assets/js/main.js typewriter engine) */
 @utility typewriter-cursor {
   display: inline-block;
   width: 0.55em;
   height: 1em;
   margin-left: 1px;
   vertical-align: -0.15em;
-  background-color: var(--color-neon-green);
+  background-color: var(--color-accent);
   animation: blink-caret 0.9s steps(1) infinite;
 }
 
-/* Noise texture overlay for depth on dark backgrounds */
-@utility bg-noise {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/></svg>");
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
 }

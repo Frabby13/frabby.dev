@@ -26,17 +26,30 @@
     }
   });
 
-  /* ---------- Cursor spotlight glow (desktop only) ---------- */
-  const spotlightEls = document.querySelectorAll(".spotlight");
-  if (window.matchMedia("(pointer: fine)").matches && spotlightEls.length) {
-    spotlightEls.forEach((el) => {
-      el.addEventListener("mousemove", (e) => {
-        const rect = el.getBoundingClientRect();
-        el.style.setProperty("--mx", `${e.clientX - rect.left}px`);
-        el.style.setProperty("--my", `${e.clientY - rect.top}px`);
-      });
-    });
+  /* ---------- Theme toggle (light / dark) ----------
+     The saved choice is applied early by the inline script in <head>;
+     without one, the system preference decides. */
+  const root = document.documentElement;
+  const systemLight = window.matchMedia("(prefers-color-scheme: light)");
+  const currentTheme = () => root.getAttribute("data-theme") || (systemLight.matches ? "light" : "dark");
+
+  function syncThemeIcons() {
+    const isLight = currentTheme() === "light";
+    // show the icon of the theme you would switch to
+    document.querySelectorAll('[data-theme-icon="sun"]').forEach((el) => el.classList.toggle("hidden", isLight));
+    document.querySelectorAll('[data-theme-icon="moon"]').forEach((el) => el.classList.toggle("hidden", !isLight));
   }
+
+  document.querySelectorAll("[data-theme-toggle]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const next = currentTheme() === "light" ? "dark" : "light";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) { /* storage unavailable */ }
+      syncThemeIcons();
+    });
+  });
+  systemLight.addEventListener("change", syncThemeIcons);
+  syncThemeIcons();
 
   /* ---------- Scroll reveal ---------- */
   const revealEls = document.querySelectorAll(".reveal");
