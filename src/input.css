@@ -164,6 +164,7 @@
     border: 1px solid var(--color-border);
     border-radius: 9999px;
     background-color: var(--color-surface-2);
+    cursor: pointer;
   }
   .theme-switch::before {
     content: "";

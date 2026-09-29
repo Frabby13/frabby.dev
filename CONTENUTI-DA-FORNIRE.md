@@ -45,3 +45,4 @@ Pagina di portfolio aggiunta al menu (tra "Chi Sono" e "Curriculum"), con 3 card
 - ⬜ **Favicon definitivo**, hosting/DNS di frabby.dev, eventuale analytics privacy-friendly — opzionali, quando pronto
 - ⬜ **Progetto professionale** in `progetti.html` — quando avrai un lavoro presentabile (screenshot, stack, eventuale link), sostituisce la card segnaposto
 - ⬜ **Progetto personale** in `progetti.html` — idem, quando avrai un side project da mostrare
+- ⬜ **Gregory Jewels** in `gregory-jewels.html` — descrizione fase 3 (e-commerce: stack, funzionalità, tempi) dopo lo studio, screenshot delle fasi 1–2 e link/date di rilascio
