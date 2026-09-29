@@ -22,3 +22,16 @@ Testi: prima persona, frasi brevi, fatti concreti. Evita gli slogan ("curato in 
 "soluzioni solide", "crescita continua"). L'azienda si scrive "Leonardo Web".
 
 Assicurati che il contrasto sia accessibile (WCAG AA) in entrambi i temi.
+
+Struttura e URL (hosting su GitHub Pages, dominio frabby.dev):
+- Pagine in italiano, URL senza estensione: `/chi-sono`, `/progetti/`, `/progetti/gregory-jewels`, `/curriculum`, `/contatti`.
+  File: `chi-sono.html`, `progetti/index.html`, `progetti/gregory-jewels.html`, `curriculum.html`, `contatti.html`.
+- Link e risorse sempre root-assoluti (`/chi-sono`, `/assets/...`, `/dist/output.css`), mai `nome.html` né `./`.
+  In locale servono da un server statico: `npm run serve` e poi http://localhost:8080 (non da `file://`).
+- Ogni nuova pagina: canonical e `og:url` puliti, JSON-LD, voce in `sitemap.xml` e riga in `llms.txt`.
+- `CONTENUTI-DA-FORNIRE.md`, `instructions.md`, `package*.json` e `src/` non vengono pubblicati (vedi `_config.yml`).
+
+Privacy e cookie:
+- Il sito non usa cookie né tracciamento; i font sono ospitati in `/assets/fonts` (nessuna richiesta a terzi). Non aggiungere CDN, embed o analytics senza aggiornare `informativa-privacy` e `informativa-cookie`.
+- Ogni script non strettamente necessario va scritto come `<script type="text/plain" data-consent="..." data-src="...">`: `assets/js/consent.js` lo blocca finché il visitatore non accetta e mostra il banner solo quando ne trova uno.
+- Se si aggiunge un form: checkbox obbligatoria per l'informativa privacy, solo i campi strettamente necessari.

@@ -1,0 +1,12 @@
+Font ospitati su frabby.dev
+
+IBM Plex Sans
+  Copyright © 2017 IBM Corp. (https://github.com/IBM/plex)
+  Licenza: SIL Open Font License, Version 1.1
+
+JetBrains Mono
+  Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+  Licenza: SIL Open Font License, Version 1.1
+
+Testo della licenza: https://openfontlicense.org/open-font-license-official-text/
+I file sono il sottoinsieme "latin" distribuito da Google Fonts.

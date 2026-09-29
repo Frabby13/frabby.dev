@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Crawler AI ammessi in modo esplicito (motori di risposta e ricerca).
+# Per escludere solo l'addestramento dei modelli, cambia in "Disallow: /" i gruppi
+# GPTBot, ClaudeBot, Google-Extended, Applebot-Extended e CCBot.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://frabby.dev/sitemap.xml

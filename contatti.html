@@ -5,42 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contatti · frabby.dev</title>
   <meta name="description" content="Scrivi a Francesco Alberto (Frabby), Full Stack Developer in Leonardo Web, via email o LinkedIn per collaborazioni o progetti web in .NET, C# e JavaScript." />
-  <link rel="canonical" href="https://frabby.dev/contact.html" />
+  <link rel="canonical" href="https://frabby.dev/contatti" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230b0d0f'/%3E%3Ctext x='50%25' y='58%25' font-family='monospace' font-size='34' font-weight='700' fill='%234ade80' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E" />
 
   <!-- Open Graph / social share preview -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://frabby.dev/contact.html" />
+  <meta property="og:url" content="https://frabby.dev/contatti" />
   <meta property="og:title" content="Contatti · frabby.dev" />
   <meta property="og:description" content="Scrivi a Francesco Alberto (Frabby) via email o LinkedIn." />
   <meta property="og:image" content="https://frabby.dev/assets/img/og-cover.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="frabby.dev" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="frabby.dev · Francesco Alberto, Full Stack Developer" />
+  <meta name="twitter:title" content="Contatti · frabby.dev" />
+  <meta name="twitter:description" content="Scrivi a Francesco Alberto (Frabby) via email o LinkedIn." />
+  <meta name="twitter:image" content="https://frabby.dev/assets/img/og-cover.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font ospitati sul sito (nessuna richiesta a terzi): IBM Plex Sans + JetBrains Mono -->
+  <link rel="preload" href="/assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin />
 
   <script>
     try { var t = sessionStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
   </script>
 
-  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="stylesheet" href="/dist/output.css" />
+
+  <!-- Dati strutturati (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "url": "https://frabby.dev/contatti",
+        "name": "Contatti · frabby.dev",
+        "description": "Scrivi a Francesco Alberto (Frabby), Full Stack Developer in Leonardo Web, via email o LinkedIn per collaborazioni o progetti web in .NET, C# e JavaScript.",
+        "inLanguage": "it",
+        "isPartOf": {
+          "@id": "https://frabby.dev/#website"
+        },
+        "about": {
+          "@id": "https://frabby.dev/#francesco"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://frabby.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contatti",
+            "item": "https://frabby.dev/contatti"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-ink text-text font-sans antialiased">
 
   <header class="sticky top-0 z-50 border-b border-border bg-ink">
     <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-3 text-sm font-medium lg:px-8">
-      <a href="index.html" class="flex items-center gap-2 font-mono text-lg font-semibold tracking-tight text-text" aria-label="frabby.dev, home">
+      <a href="/" class="flex items-center gap-2 font-mono text-lg font-semibold tracking-tight text-text" aria-label="frabby.dev, home">
         <span aria-hidden="true" class="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-2 text-accent">&lt;/&gt;</span>
         <span>frabby<span class="text-accent">.dev</span></span>
       </a>
 
       <nav aria-label="Navigazione principale" class="hidden items-center gap-6 md:flex">
-        <a href="index.html" data-nav-link class="nav-link">Home</a>
-        <a href="about.html" data-nav-link class="nav-link">Chi sono</a>
-        <a href="progetti.html" data-nav-link class="nav-link">Progetti</a>
-        <a href="cv.html" data-nav-link class="nav-link">Curriculum</a>
-        <a href="contact.html" aria-current="page" data-nav-link class="nav-link">Contatti</a>
+        <a href="/" data-nav-link class="nav-link">Home</a>
+        <a href="/chi-sono" data-nav-link class="nav-link">Chi sono</a>
+        <a href="/progetti/" data-nav-link class="nav-link">Progetti</a>
+        <a href="/curriculum" data-nav-link class="nav-link">Curriculum</a>
+        <a href="/contatti" aria-current="page" data-nav-link class="nav-link">Contatti</a>
       </nav>
 
       <div class="flex items-center gap-3">
@@ -49,7 +97,7 @@
           <svg data-theme-icon="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
         <button type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Apri il menu"
-          class="rounded-md border border-border px-3 py-1.5 text-sm text-text hover:border-accent hover:text-accent md:hidden">
+          class="rounded-md border border-text-faint px-3 py-1.5 text-sm text-text hover:border-accent hover:text-accent md:hidden">
           Menu
         </button>
       </div>
@@ -57,11 +105,11 @@
 
     <!-- Mobile nav panel -->
     <div id="mobile-nav" data-mobile-nav class="hidden flex-col border-t border-border px-6 py-3 text-sm font-medium md:hidden">
-      <a href="index.html" class="nav-link block py-2">Home</a>
-      <a href="about.html" class="nav-link block py-2">Chi sono</a>
-      <a href="progetti.html" class="nav-link block py-2">Progetti</a>
-      <a href="cv.html" class="nav-link block py-2">Curriculum</a>
-      <a href="contact.html" aria-current="page" class="nav-link block py-2">Contatti</a>
+      <a href="/" class="nav-link block py-2">Home</a>
+      <a href="/chi-sono" class="nav-link block py-2">Chi sono</a>
+      <a href="/progetti/" class="nav-link block py-2">Progetti</a>
+      <a href="/curriculum" class="nav-link block py-2">Curriculum</a>
+      <a href="/contatti" aria-current="page" class="nav-link block py-2">Contatti</a>
     </div>
   </header>
 
@@ -93,7 +141,7 @@
               <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-accent/10 text-accent">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
               </span>
-              <a href="mailto:francesco.alberto13@gmail.com" class="break-all text-text-dim transition-colors hover:text-accent">francesco.alberto13@gmail.com</a>
+              <a href="mailto:francesco@frabby.dev" class="break-all text-text-dim transition-colors hover:text-accent">francesco@frabby.dev</a>
             </li>
             <li class="flex items-center gap-3">
               <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-accent/10 text-accent">
@@ -118,7 +166,7 @@
   <footer class="border-t border-border bg-surface text-sm text-text-faint">
     <div class="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-6 sm:flex-row sm:items-center sm:justify-between lg:px-8">
       <div class="flex flex-wrap items-center gap-x-5 gap-y-2">
-        <a href="index.html" class="flex items-center gap-2 font-mono text-base font-semibold tracking-tight text-text" aria-label="frabby.dev, home">
+        <a href="/" class="flex items-center gap-2 font-mono text-base font-semibold tracking-tight text-text" aria-label="frabby.dev, home">
         <span aria-hidden="true" class="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-2 text-accent">&lt;/&gt;</span>
         <span>frabby<span class="text-accent">.dev</span></span>
       </a>
@@ -126,11 +174,23 @@
       </div>
       <p class="flex gap-5">
         <a href="https://www.linkedin.com/in/francesco-alberto-352678270" target="_blank" rel="noopener" class="text-text-dim hover:text-accent">LinkedIn</a>
-        <a href="mailto:francesco.alberto13@gmail.com" class="text-text-dim hover:text-accent">Email</a>
+        <a href="mailto:francesco@frabby.dev" class="text-text-dim hover:text-accent">Email</a>
       </p>
+    </div>
+    <div class="border-t border-border">
+      <div class="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-4 text-xs sm:flex-row sm:items-center sm:justify-between lg:px-8">
+        <p>Sito personale di Francesco Alberto, persona fisica · <a href="mailto:francesco@frabby.dev" class="text-text-dim underline decoration-border underline-offset-4 hover:text-accent">francesco@frabby.dev</a></p>
+        <nav aria-label="Note legali" class="flex flex-wrap items-center gap-x-5 gap-y-2">
+          <a href="/informativa-privacy" class="text-text-dim hover:text-accent">Privacy</a>
+          <a href="/informativa-cookie" class="text-text-dim hover:text-accent">Cookie</a>
+          <a href="/termini-e-condizioni" class="text-text-dim hover:text-accent">Termini e condizioni</a>
+          <button type="button" data-consent-open hidden class="text-text-dim hover:text-accent">Preferenze cookie</button>
+        </nav>
+      </div>
     </div>
   </footer>
 
-  <script src="./assets/js/main.js"></script>
+  <script src="/assets/js/consent.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

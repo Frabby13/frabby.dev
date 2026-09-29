@@ -17,11 +17,19 @@
     });
   }
 
-  /* ---------- Active nav link (based on current pathname) ---------- */
-  const currentFile = (location.pathname.split("/").pop() || "index.html") || "index.html";
+  /* ---------- Clean URLs + active nav link ----------
+     GitHub Pages serves /pagina.html anche come /pagina, ma non reindirizza: se qualcuno apre
+     la versione con l'estensione, mostriamo comunque l'indirizzo pulito (il canonical fa il resto). */
+  const cleanPath = (p) => p.replace(/\/index\.html$/, "/").replace(/\.html$/, "");
+  if (location.protocol.startsWith("http") && cleanPath(location.pathname) !== location.pathname) {
+    try { history.replaceState(null, "", cleanPath(location.pathname) + location.search + location.hash); } catch (e) {}
+  }
+
+  // La voce attiva si decide dal primo segmento: /progetti/gregory-jewels evidenzia "Progetti".
+  const firstSegment = (p) => cleanPath(p).split("/").filter(Boolean)[0] || "";
+  const currentSection = firstSegment(location.pathname);
   document.querySelectorAll("[data-nav-link]").forEach((link) => {
-    const target = link.getAttribute("href");
-    if (target === currentFile || (currentFile === "" && target === "index.html")) {
+    if (firstSegment(link.getAttribute("href") || "") === currentSection) {
       link.setAttribute("data-active", "true");
     }
   });

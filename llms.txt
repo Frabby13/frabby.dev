@@ -1,0 +1,30 @@
+# frabby.dev
+
+> Sito personale di Francesco Alberto (online: Frabby), Full Stack Developer in Leonardo Web S.r.l. Sviluppa siti e applicazioni web con C#, .NET, JavaScript e SQL, dal frontend al database. Diplomato in Informatica e Telecomunicazioni all'IIS G. Vallauri di Fossano. Lavora da remoto, in Italia. Il sito è in italiano.
+
+Informazioni di base:
+
+- Ruolo attuale: impiegato qualificato, Full Stack Developer in Leonardo Web S.r.l. (da settembre 2026), dopo apprendistato (marzo 2024 – agosto 2026) e tirocinio (settembre 2023 – febbraio 2024) nella stessa azienda.
+- Prime esperienze: tirocini come Backend & CMS Developer in Tech11 GmbH (Germania), nell'estate del 2021 e del 2022.
+- Competenze: C#, .NET Core, ASP.NET, Razor, Blazor, JavaScript, jQuery, Tailwind CSS, Bootstrap, SQL Server, PostgreSQL, Git.
+- Lingua del sito: italiano.
+
+## Pagine
+
+- [Home](https://frabby.dev/): presentazione, stack e ruolo attuale.
+- [Chi sono](https://frabby.dev/chi-sono): percorso professionale, formazione e competenze.
+- [Progetti](https://frabby.dev/progetti/): i progetti che posso mostrare in pubblico.
+- [Gregory Jewels](https://frabby.dev/progetti/gregory-jewels): progetto personale in tre fasi per un brand di alta gioielleria artigianale, dalla pagina online al sito vetrina fino all'e-commerce; realizzato direttamente per l'azienda, non tramite Leonardo Web.
+- [Curriculum](https://frabby.dev/curriculum): esperienze lavorative, formazione e competenze.
+- [Contatti](https://frabby.dev/contatti): modi per scrivermi (email e LinkedIn).
+
+## Link esterni
+
+- [LinkedIn](https://www.linkedin.com/in/francesco-alberto-352678270): profilo professionale.
+- [Gregory Jewels](https://gregoryjewels.com): sito del brand (attualmente una pagina "sito in costruzione").
+
+## Optional
+
+- [Informativa sulla privacy](https://frabby.dev/informativa-privacy): come vengono trattati i dati dei visitatori.
+- [Informativa sui cookie](https://frabby.dev/informativa-cookie): il sito non usa cookie né strumenti di tracciamento.
+- [Termini e condizioni](https://frabby.dev/termini-e-condizioni): condizioni di utilizzo del sito.

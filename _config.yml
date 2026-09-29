@@ -1,0 +1,9 @@
+# GitHub Pages (Jekyll): file e cartelle di lavoro che NON devono essere pubblicati.
+# Pages serve tutta la radice del repository: senza questa lista sarebbero raggiungibili e indicizzabili.
+exclude:
+  - CONTENUTI-DA-FORNIRE.md
+  - instructions.md
+  - package.json
+  - package-lock.json
+  - src
+  - node_modules
