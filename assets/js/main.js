@@ -1,5 +1,5 @@
 /*
-  iamfrabby.it — shared front-end behaviour (prototype only).
+  frabby.dev — shared front-end behaviour (prototype only).
   In futuro .NET porting: questa logica resta invariata (asset statico
   servito da wwwroot/js/main.js), nessuna dipendenza da build tool.
 */
@@ -33,11 +33,10 @@
   const systemLight = window.matchMedia("(prefers-color-scheme: light)");
   const currentTheme = () => root.getAttribute("data-theme") || (systemLight.matches ? "light" : "dark");
 
-  function syncThemeIcons() {
-    const isLight = currentTheme() === "light";
-    // show the icon of the theme you would switch to
-    document.querySelectorAll('[data-theme-icon="sun"]').forEach((el) => el.classList.toggle("hidden", isLight));
-    document.querySelectorAll('[data-theme-icon="moon"]').forEach((el) => el.classList.toggle("hidden", !isLight));
+  // switch: sun (left) = light, moon (right) = dark; aria-checked="true" means dark
+  function syncThemeSwitch() {
+    const isDark = currentTheme() === "dark";
+    document.querySelectorAll("[data-theme-toggle]").forEach((el) => el.setAttribute("aria-checked", String(isDark)));
   }
 
   document.querySelectorAll("[data-theme-toggle]").forEach((btn) => {
@@ -45,11 +44,15 @@
       const next = currentTheme() === "light" ? "dark" : "light";
       root.setAttribute("data-theme", next);
       try { sessionStorage.setItem("theme", next); } catch (e) { /* storage unavailable */ }
-      syncThemeIcons();
+      syncThemeSwitch();
     });
   });
-  systemLight.addEventListener("change", syncThemeIcons);
-  syncThemeIcons();
+  systemLight.addEventListener("change", syncThemeSwitch);
+  syncThemeSwitch();
+  // enable the thumb slide only after the initial state is set (no animation on page load)
+  requestAnimationFrame(() => {
+    document.querySelectorAll("[data-theme-toggle]").forEach((el) => el.setAttribute("data-animate", ""));
+  });
 
   /* ---------- Scroll reveal ---------- */
   const revealEls = document.querySelectorAll(".reveal");
@@ -80,7 +83,7 @@
       if (node.nodeType === Node.TEXT_NODE) {
         for (const char of node.textContent) queue.push({ type: "char", char });
       } else if (node.nodeType === Node.ELEMENT_NODE) {
-        queue.push({ type: "open", tag: node.tagName.toLowerCase(), className: node.className });
+        queue.push({ type: "open", tag: node.tagName.toLowerCase(), attrs: Array.from(node.attributes) });
         node.childNodes.forEach(walk);
         queue.push({ type: "close" });
       }
@@ -103,7 +106,7 @@
 
       if (op.type === "open") {
         const el = document.createElement(op.tag);
-        if (op.className) el.className = op.className;
+        op.attrs.forEach((attr) => el.setAttribute(attr.name, attr.value)); // keeps class, href, …
         parent.appendChild(el);
         stack.push(el);
         step();
@@ -133,6 +136,7 @@
         if (el.dataset.typed === "true") return;
         el.dataset.typed = "true";
         if (prefersReducedMotion) return; // leave the static markup as-is
+        el.style.minHeight = el.offsetHeight + "px"; // reserve the final height: no layout jump while typing
         el.innerHTML = "";
         typeMarkup(source, el, speed);
       };

@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chi Sono · iamfrabby.it</title>
-  <meta name="description" content="Il percorso professionale e formativo di Frabby: da tirocinante ad apprendista fino a Full Stack Developer in LeonardoWeb, diploma IIS G. Vallauri di Fossano, competenze frontend, backend .NET e database." />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23090b12'/%3E%3Ctext x='50%25' y='58%25' font-family='monospace' font-size='34' font-weight='700' fill='%234ade80' text-anchor='middle'%3E%3C/%3E%3C/text%3E%3C/svg%3E" />
+  <title>Chi sono · frabby.dev</title>
+  <meta name="description" content="Il percorso di Francesco Alberto (Frabby): da tirocinante ad apprendista fino a Full Stack Developer in Leonardo Web. Diploma all'IIS G. Vallauri di Fossano, backend .NET, frontend e database." />
+  <link rel="canonical" href="https://frabby.dev/about.html" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230b0d0f'/%3E%3Ctext x='50%25' y='58%25' font-family='monospace' font-size='34' font-weight='700' fill='%234ade80' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E" />
 
   <!-- Open Graph / social share preview -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Chi Sono · iamfrabby.it" />
-  <meta property="og:description" content="Il percorso professionale e formativo di Frabby, Full Stack Developer in LeonardoWeb." />
-  <meta property="og:image" content="./assets/img/og-cover.svg" />
+  <meta property="og:url" content="https://frabby.dev/about.html" />
+  <meta property="og:title" content="Chi sono · frabby.dev" />
+  <meta property="og:description" content="Il percorso di Francesco Alberto (Frabby), Full Stack Developer in Leonardo Web." />
+  <meta property="og:image" content="https://frabby.dev/assets/img/og-cover.svg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <script>
     try { var t = sessionStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
@@ -25,179 +27,136 @@
 </head>
 <body class="bg-ink text-text font-sans antialiased">
 
-  <header class="sticky top-0 z-50 border-b border-border-soft/80 bg-ink/95">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-      <a href="index.html" class="flex items-center gap-2 font-mono text-lg font-semibold tracking-tight text-text">
-        <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-2 text-accent">&lt;/&gt;</span>
-        <span>iamfrabby<span class="text-accent">.it</span></span>
+  <header class="sticky top-0 z-50 border-b border-border bg-ink">
+    <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-3 text-sm font-medium lg:px-8">
+      <a href="index.html" class="flex items-center gap-2 font-mono text-lg font-semibold tracking-tight text-text" aria-label="frabby.dev, home">
+        <span aria-hidden="true" class="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-2 text-accent">&lt;/&gt;</span>
+        <span>frabby<span class="text-accent">.dev</span></span>
       </a>
 
-      <nav aria-label="Navigazione principale" class="hidden items-center gap-8 md:flex">
-        <a href="index.html" data-nav-link class="group relative px-1 py-2 text-sm font-medium text-text-dim transition-colors hover:text-text">
-          Home
-          <span class="absolute inset-x-0 -bottom-0.5 h-0.5 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 bg-accent"></span>
-        </a>
-        <a href="about.html" aria-current="page" data-nav-link class="group relative px-1 py-2 text-sm font-medium text-text">
-          Chi Sono
-          <span class="absolute inset-x-0 -bottom-0.5 h-0.5 scale-x-100 transition-transform duration-300 bg-accent"></span>
-        </a>
-        <a href="progetti.html" data-nav-link class="group relative px-1 py-2 text-sm font-medium text-text-dim transition-colors hover:text-text">
-          Progetti
-          <span class="absolute inset-x-0 -bottom-0.5 h-0.5 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 bg-accent"></span>
-        </a>
-        <a href="cv.html" data-nav-link class="group relative px-1 py-2 text-sm font-medium text-text-dim transition-colors hover:text-text">
-          Curriculum
-          <span class="absolute inset-x-0 -bottom-0.5 h-0.5 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 bg-accent"></span>
-        </a>
-        <a href="contact.html" data-nav-link class="group relative px-1 py-2 text-sm font-medium text-text-dim transition-colors hover:text-text">
-          Contatti
-          <span class="absolute inset-x-0 -bottom-0.5 h-0.5 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 bg-accent"></span>
-        </a>
+      <nav aria-label="Navigazione principale" class="hidden items-center gap-6 md:flex">
+        <a href="index.html" data-nav-link class="nav-link">Home</a>
+        <a href="about.html" aria-current="page" data-nav-link class="nav-link">Chi sono</a>
+        <a href="progetti.html" data-nav-link class="nav-link">Progetti</a>
+        <a href="cv.html" data-nav-link class="nav-link">Curriculum</a>
+        <a href="contact.html" data-nav-link class="nav-link">Contatti</a>
       </nav>
 
       <div class="flex items-center gap-3">
-        <button type="button" data-theme-toggle aria-label="Cambia tema chiaro/scuro"
-          class="flex h-10 w-10 items-center justify-center rounded-lg border border-border text-text-dim transition-colors hover:border-accent hover:text-accent">
-          <svg data-theme-icon="sun" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-          <svg data-theme-icon="moon" xmlns="http://www.w3.org/2000/svg" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <button type="button" role="switch" aria-checked="true" aria-label="Tema scuro" data-theme-toggle class="theme-switch">
+          <svg data-theme-icon="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg data-theme-icon="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-        <a href="contact.html" class="hidden md:inline-block rounded-full px-5 py-2 text-sm font-semibold bg-accent text-on-accent transition-colors hover:bg-accent-hover">
-          Contattami
-        </a>
         <button type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Apri il menu"
-          class="flex h-10 w-10 items-center justify-center rounded-lg border border-border text-text md:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <path d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+          class="rounded-md border border-border px-3 py-1.5 text-sm text-text hover:border-accent hover:text-accent md:hidden">
+          Menu
         </button>
       </div>
     </div>
 
-    <div id="mobile-nav" data-mobile-nav class="hidden flex-col gap-1 border-t border-border-soft px-6 py-4 md:hidden">
-      <a href="index.html" class="rounded-lg px-3 py-2 text-sm font-medium text-text-dim hover:bg-surface-2 hover:text-text">Home</a>
-      <a href="about.html" aria-current="page" class="rounded-lg px-3 py-2 text-sm font-medium text-text bg-surface-2">Chi Sono</a>
-      <a href="progetti.html" class="rounded-lg px-3 py-2 text-sm font-medium text-text-dim hover:bg-surface-2 hover:text-text">Progetti</a>
-      <a href="cv.html" class="rounded-lg px-3 py-2 text-sm font-medium text-text-dim hover:bg-surface-2 hover:text-text">Curriculum</a>
-      <a href="contact.html" class="rounded-lg px-3 py-2 text-sm font-medium text-text-dim hover:bg-surface-2 hover:text-text">Contatti</a>
-      <a href="contact.html" class="mt-2 rounded-full px-4 py-2 text-center text-sm font-semibold bg-accent text-on-accent transition-colors hover:bg-accent-hover">Contattami</a>
+    <!-- Mobile nav panel -->
+    <div id="mobile-nav" data-mobile-nav class="hidden flex-col border-t border-border px-6 py-3 text-sm font-medium md:hidden">
+      <a href="index.html" class="nav-link block py-2">Home</a>
+      <a href="about.html" aria-current="page" class="nav-link block py-2">Chi sono</a>
+      <a href="progetti.html" class="nav-link block py-2">Progetti</a>
+      <a href="cv.html" class="nav-link block py-2">Curriculum</a>
+      <a href="contact.html" class="nav-link block py-2">Contatti</a>
     </div>
   </header>
 
   <main>
-    <section class="relative overflow-hidden px-6 pb-20 pt-20 lg:px-8 lg:pt-28">
-      <div class="reveal mx-auto flex max-w-4xl flex-col gap-8 sm:flex-row sm:items-center">
-        <!-- PLACEHOLDER: foto reale, al momento un avatar segnaposto con le iniziali -->
-        <div class="flex h-28 w-28 shrink-0 items-center justify-center rounded-full border border-border font-mono text-3xl font-bold text-text bg-surface-2">
+    <section class="px-6 pb-14 pt-14 lg:px-8 lg:pt-20">
+      <div class="reveal mx-auto flex max-w-5xl flex-col gap-8 sm:flex-row sm:items-start">
+        <!-- PLACEHOLDER: foto reale, al momento un monogramma con le iniziali -->
+        <div aria-hidden="true" class="flex h-24 w-24 shrink-0 items-center justify-center rounded-xl border border-border bg-surface font-mono text-3xl font-bold text-accent">
           FA
         </div>
         <div>
           <p class="font-mono text-sm text-accent">Chi sono</p>
-          <h1 class="mt-4 text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-            Sviluppatore prima per curiosità,
-            <span class="text-accent">oggi per mestiere.</span>
-          </h1>
-          <p class="mt-6 max-w-2xl text-lg text-text-dim">
-            Mi chiamo Frabby, sono un Full Stack Developer con 3 anni di esperienza nel settore. Amo il codice
-            pulito, le architetture ben ragionate e l'idea che ogni progetto, piccolo o grande, meriti la stessa
-            cura nei dettagli.
+          <h1 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Sviluppatore per curiosità, oggi per lavoro.</h1>
+          <p class="mt-5 max-w-2xl text-text-dim sm:text-lg">
+            Mi chiamo Francesco, online sono Frabby. Faccio il Full Stack Developer da tre anni, cioè mi occupo
+            di un sito o di un'applicazione dall'inizio alla fine: quello che si vede e quello che c'è dietro.
+            Mi piacciono il codice pulito e le cose fatte con ordine, e credo che un progetto piccolo meriti la
+            stessa attenzione di uno grande.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="reveal px-6 py-20 lg:px-8">
-      <div class="mx-auto max-w-4xl">
-        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Il mio percorso</h2>
-        <p class="mt-2 text-text-dim">Tre anni di crescita continua tra progetti, tecnologie e responsabilità.</p>
+    <section aria-labelledby="percorso-title" class="reveal border-t border-border px-6 py-14 lg:px-8">
+      <div class="mx-auto max-w-5xl">
+        <p class="font-mono text-sm text-accent">Percorso</p>
+        <h2 id="percorso-title" class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">Il mio percorso</h2>
 
-        <ol class="mt-12 space-y-12 border-l border-border pl-8">
+        <ol class="mt-10 max-w-3xl space-y-10 border-l border-border pl-8">
           <li class="relative">
-            <span class="absolute -left-[2.35rem] flex h-4 w-4 items-center justify-center rounded-full border-2 border-ink bg-accent"></span>
-            <p class="font-mono text-xs uppercase tracking-widest text-accent">Set 2026 - Oggi</p>
-            <h3 class="mt-2 text-lg font-semibold text-text">Impiegato Qualificato · Full Stack Developer</h3>
-            <p class="mt-1 font-mono text-xs text-text-faint">LeonardoWeb S.r.l.</p>
-            <p class="mt-2 max-w-xl text-sm text-text-dim">
-              Dopo il percorso da tirocinante ad apprendista, oggi lavoro come Full Stack Developer qualificato:
-              sviluppo e mantengo applicazioni web in ASP.NET / .NET Core, con Razor, Blazor e interfacce curate
-              con Tailwind CSS e Bootstrap.
-            </p>
+            <span aria-hidden="true" class="absolute -left-[2.4rem] top-1.5 h-3 w-3 rounded-full bg-accent"></span>
+            <p class="font-mono text-xs text-text-faint">Set 2026 – oggi <span class="ml-2 rounded bg-accent px-1.5 py-0.5 text-[10px] font-semibold uppercase text-on-accent">Oggi</span></p>
+            <h3 class="mt-2 text-lg font-semibold text-text">Impiegato qualificato · Full Stack Developer</h3>
+            <p class="mt-1 text-sm font-medium text-accent">Leonardo Web S.r.l.</p>
+            <p class="mt-3 max-w-xl text-sm text-text-dim">Da settembre sono impiegato qualificato. Sviluppo e mantengo applicazioni web in ASP.NET e .NET Core, con Razor e Blazor, e interfacce in Tailwind CSS e Bootstrap.</p>
           </li>
           <li class="relative">
-            <span class="absolute -left-[2.35rem] flex h-4 w-4 items-center justify-center rounded-full border-2 border-ink bg-accent"></span>
-            <p class="font-mono text-xs uppercase tracking-widest text-accent">Mar 2024 - Ago 2026</p>
+            <span aria-hidden="true" class="absolute -left-[2.4rem] top-1.5 h-3 w-3 rounded-full bg-text-faint"></span>
+            <p class="font-mono text-xs text-text-faint">Mar 2024 – Ago 2026</p>
             <h3 class="mt-2 text-lg font-semibold text-text">Apprendistato · Full Stack Developer</h3>
-            <p class="mt-1 font-mono text-xs text-text-faint">LeonardoWeb S.r.l.</p>
-            <p class="mt-2 max-w-xl text-sm text-text-dim">
-              Trenta mesi di crescita continua: sviluppo full stack su progetti reali, gestione di basi dati SQL
-              Server e PostgreSQL, affiancamento a sviluppatori senior fino alla piena autonomia sui progetti.
-            </p>
+            <p class="mt-1 text-sm font-medium text-accent">Leonardo Web S.r.l.</p>
+            <p class="mt-3 max-w-xl text-sm text-text-dim">Trenta mesi su progetti reali: sviluppo full stack, database SQL Server e PostgreSQL. All'inizio affiancato a sviluppatori senior, poi sempre più in autonomia.</p>
           </li>
           <li class="relative">
-            <span class="absolute -left-[2.35rem] flex h-4 w-4 items-center justify-center rounded-full border-2 border-ink bg-accent"></span>
-            <p class="font-mono text-xs uppercase tracking-widest text-accent">Set 2023 - Feb 2024</p>
+            <span aria-hidden="true" class="absolute -left-[2.4rem] top-1.5 h-3 w-3 rounded-full bg-text-faint"></span>
+            <p class="font-mono text-xs text-text-faint">Set 2023 – Feb 2024</p>
             <h3 class="mt-2 text-lg font-semibold text-text">Tirocinio · Web Developer</h3>
-            <p class="mt-1 font-mono text-xs text-text-faint">LeonardoWeb S.r.l.</p>
-            <p class="mt-2 max-w-xl text-sm text-text-dim">
-              Il mio primo inserimento in azienda: sviluppo di nuove funzionalità su applicazioni ASP.NET
-              esistenti, primi passi con jQuery e supporto nella gestione di database SQL Server.
-            </p>
+            <p class="mt-1 text-sm font-medium text-accent">Leonardo Web S.r.l.</p>
+            <p class="mt-3 max-w-xl text-sm text-text-dim">Il mio primo periodo in azienda: nuove funzionalità su applicazioni ASP.NET già esistenti, i primi passi con jQuery e un po' di supporto sui database SQL Server.</p>
           </li>
           <li class="relative">
-            <span class="absolute -left-[2.35rem] flex h-4 w-4 items-center justify-center rounded-full border-2 border-ink bg-accent"></span>
-            <p class="font-mono text-xs uppercase tracking-widest text-accent">Ago 2021 e Lug–Ago 2022</p>
+            <span aria-hidden="true" class="absolute -left-[2.4rem] top-1.5 h-3 w-3 rounded-full bg-text-faint"></span>
+            <p class="font-mono text-xs text-text-faint">Ago 2021 e Lug–Ago 2022</p>
             <h3 class="mt-2 text-lg font-semibold text-text">Tirocinio · Backend &amp; CMS Developer</h3>
-            <p class="mt-1 font-mono text-xs text-text-faint">Tech11 GmbH · Germania</p>
-            <p class="mt-2 max-w-xl text-sm text-text-dim">
-              Le mie prime esperienze professionali, durante le estati del 3° e 4° anno di superiori: sviluppo
-              backend e personalizzazione di CMS in Classic ASP e ASP.NET, con basi di dati Access e SQL Server,
-              lavorando in autonomia e in lingua straniera.
-            </p>
+            <p class="mt-1 text-sm font-medium text-accent">Tech11 GmbH · Germania</p>
+            <p class="mt-3 max-w-xl text-sm text-text-dim">Due estati, al 3° e 4° anno di superiori: backend e personalizzazione di CMS in Classic ASP e ASP.NET, con database Access e SQL Server. Lavoravo in autonomia e in lingua straniera.</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <section class="reveal px-6 py-20 lg:px-8">
-      <div class="mx-auto max-w-4xl">
-        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Formazione</h2>
+    <section aria-labelledby="formazione-title" class="reveal border-t border-border px-6 py-14 lg:px-8">
+      <div class="mx-auto max-w-5xl">
+        <p class="font-mono text-sm text-accent">Formazione</p>
+        <h2 id="formazione-title" class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">Studi</h2>
 
-        <div class="border border-border bg-surface mt-8 rounded-2xl p-8 sm:p-10">
-          <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
-            <div>
-              <p class="font-mono text-xs uppercase tracking-widest text-accent">Diploma di Istruzione Tecnica</p>
-              <h3 class="mt-2 text-xl font-semibold text-text">IIS G. Vallauri · Fossano</h3>
-              <p class="mt-3 max-w-xl text-sm text-text-dim">
-                Percorso di studi in Informatica e Telecomunicazioni, con solide basi in programmazione, reti, basi
-                di dati e progettazione di sistemi software: le fondamenta su cui ho costruito la mia carriera da
-                sviluppatore.
-              </p>
-            </div>
-            <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-border bg-ink-soft font-mono text-lg font-bold text-accent">
-              IIS
-            </span>
-          </div>
+        <div class="tui-window mt-8 max-w-3xl">
+          <p class="font-mono text-xs text-text-faint">Diploma di istruzione tecnica · 2018 – 2023</p>
+          <h3 class="mt-2 text-lg font-semibold text-text">IIS G. Vallauri · Fossano</h3>
+          <p class="mt-3 text-sm text-text-dim">
+            Informatica e Telecomunicazioni: programmazione, reti, basi di dati e progettazione di sistemi
+            software, con diversi project work pratici.
+          </p>
 
-          <div class="mt-8 flex flex-wrap gap-2">
-            <!-- PLACEHOLDER: competenze chiave acquisite durante il percorso -->
-            <span class="rounded-full border border-border-soft bg-surface-2 px-3 py-1 font-mono text-xs text-text-dim">Programmazione</span>
-            <span class="rounded-full border border-border-soft bg-surface-2 px-3 py-1 font-mono text-xs text-text-dim">Basi di Dati</span>
-            <span class="rounded-full border border-border-soft bg-surface-2 px-3 py-1 font-mono text-xs text-text-dim">Reti</span>
-            <span class="rounded-full border border-border-soft bg-surface-2 px-3 py-1 font-mono text-xs text-text-dim">Sistemi &amp; Reti</span>
-            <span class="rounded-full border border-border-soft bg-surface-2 px-3 py-1 font-mono text-xs text-text-dim">Project Work</span>
+          <!-- PLACEHOLDER: competenze chiave acquisite durante il percorso (da confermare) -->
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="tag">Programmazione</span>
+            <span class="tag">Basi di Dati</span>
+            <span class="tag">Reti</span>
+            <span class="tag">Sistemi &amp; Reti</span>
+            <span class="tag">Project Work</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="reveal px-6 pb-28 lg:px-8">
-      <div class="mx-auto max-w-6xl">
-        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Core Skills &amp; Architettura</h2>
-        <p class="mt-2 max-w-2xl text-text-dim">Le competenze su cui costruisco ogni progetto, dal client al database.</p>
+    <section aria-labelledby="skills-title" class="reveal border-t border-border px-6 pb-24 pt-14 lg:px-8">
+      <div class="mx-auto max-w-5xl">
+        <p class="font-mono text-sm text-accent">Competenze</p>
+        <h2 id="skills-title" class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">Core Skills &amp; Architettura</h2>
+        <p class="mt-3 max-w-2xl text-text-dim">Le competenze su cui costruisco ogni progetto, dal client al database.</p>
 
         <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="group rounded-2xl border border-border bg-surface-2 p-6 transition-colors hover:border-accent">
-            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M4 9h16"/></svg>
+          <div class="rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent">
+            <span class="flex h-10 w-10 items-center justify-center rounded-md bg-accent/10 text-accent">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M4 9h16"/></svg>
             </span>
             <h3 class="mt-4 font-semibold text-text">Frontend</h3>
             <ul class="mt-3 space-y-1.5 text-sm text-text-dim">
@@ -207,10 +166,9 @@
               <li>Razor Pages / viste server-side</li>
             </ul>
           </div>
-
-          <div class="group rounded-2xl border border-border bg-surface-2 p-6 transition-colors hover:border-accent">
-            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l9 4.5v9L12 21l-9-4.5v-9L12 3z"/></svg>
+          <div class="rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent">
+            <span class="flex h-10 w-10 items-center justify-center rounded-md bg-accent/10 text-accent">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l9 4.5v9L12 21l-9-4.5v-9L12 3z"/></svg>
             </span>
             <h3 class="mt-4 font-semibold text-text">Backend</h3>
             <ul class="mt-3 space-y-1.5 text-sm text-text-dim">
@@ -220,10 +178,9 @@
               <li>Manutenzione ed evoluzione di applicazioni esistenti</li>
             </ul>
           </div>
-
-          <div class="group rounded-2xl border border-border bg-surface-2 p-6 transition-colors hover:border-accent">
-            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+          <div class="rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent">
+            <span class="flex h-10 w-10 items-center justify-center rounded-md bg-accent/10 text-accent">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
             </span>
             <h3 class="mt-4 font-semibold text-text">Database</h3>
             <ul class="mt-3 space-y-1.5 text-sm text-text-dim">
@@ -233,10 +190,9 @@
               <li>Modellazione relazionale</li>
             </ul>
           </div>
-
-          <div class="group rounded-2xl border border-border bg-surface-2 p-6 transition-colors hover:border-accent">
-            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 17l6-6-6-6"/><path d="M12 19h8"/></svg>
+          <div class="rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent">
+            <span class="flex h-10 w-10 items-center justify-center rounded-md bg-accent/10 text-accent">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 17l6-6-6-6"/><path d="M12 19h8"/></svg>
             </span>
             <h3 class="mt-4 font-semibold text-text">Strumenti &amp; Workflow</h3>
             <ul class="mt-3 space-y-1.5 text-sm text-text-dim">
@@ -251,44 +207,19 @@
     </section>
   </main>
 
-  <footer class="border-t border-border-soft bg-surface/60 px-6 py-14 lg:px-8">
-    <div class="mx-auto max-w-7xl">
-      <div class="grid gap-10 md:grid-cols-4">
-        <div class="md:col-span-2">
-          <a href="index.html" class="flex items-center gap-2 font-mono text-lg font-semibold text-text">
-            <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-2 text-accent">&lt;/&gt;</span>
-            <span>iamfrabby<span class="text-accent">.it</span></span>
-          </a>
-          <p class="mt-4 max-w-sm text-sm text-text-dim">
-            Full Stack Developer: .NET, C# &amp; JavaScript. Costruisco prodotti web curati in ogni dettaglio.
-          </p>
-        </div>
-
-        <div>
-          <p class="font-mono text-xs uppercase tracking-widest text-text-faint">Link rapidi</p>
-          <ul class="mt-4 space-y-2 text-sm">
-            <li><a href="index.html" class="text-text-dim transition-colors hover:text-accent">Home</a></li>
-            <li><a href="about.html" class="text-text-dim transition-colors hover:text-accent">Chi Sono</a></li>
-            <li><a href="progetti.html" class="text-text-dim transition-colors hover:text-accent">Progetti</a></li>
-            <li><a href="cv.html" class="text-text-dim transition-colors hover:text-accent">Curriculum</a></li>
-            <li><a href="contact.html" class="text-text-dim transition-colors hover:text-accent">Contatti</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="font-mono text-xs uppercase tracking-widest text-text-faint">Social &amp; dev</p>
-          <ul class="mt-4 space-y-2 text-sm">
-            <li><a href="https://www.linkedin.com/in/francesco-alberto-352678270" target="_blank" rel="noopener" class="text-text-dim transition-colors hover:text-accent">LinkedIn</a></li>
-            <li><a href="mailto:francesco.alberto13@gmail.com" class="text-text-dim transition-colors hover:text-accent">Email</a></li>
-          </ul>
-        </div>
+  <footer class="border-t border-border bg-surface text-sm text-text-faint">
+    <div class="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-6 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-2">
+        <a href="index.html" class="flex items-center gap-2 font-mono text-base font-semibold tracking-tight text-text" aria-label="frabby.dev, home">
+        <span aria-hidden="true" class="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-2 text-accent">&lt;/&gt;</span>
+        <span>frabby<span class="text-accent">.dev</span></span>
+      </a>
+        <p>Francesco Alberto · Fossano (CN) · © <span data-current-year>2026</span></p>
       </div>
-
-      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border-soft pt-8 sm:flex-row">
-        <p class="text-xs text-text-faint">
-          © <span data-current-year>2026</span> iamfrabby.it · Tutti i diritti riservati.
-        </p>
-      </div>
+      <p class="flex gap-5">
+        <a href="https://www.linkedin.com/in/francesco-alberto-352678270" target="_blank" rel="noopener" class="text-text-dim hover:text-accent">LinkedIn</a>
+        <a href="mailto:francesco.alberto13@gmail.com" class="text-text-dim hover:text-accent">Email</a>
+      </p>
     </div>
   </footer>
 

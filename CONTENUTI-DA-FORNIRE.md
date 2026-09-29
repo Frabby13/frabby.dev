@@ -1,4 +1,4 @@
-# Contenuti da fornire — iamfrabby.it
+# Contenuti da fornire — frabby.dev
 
 Checklist dei dati/testi ancora mancanti nel prototipo. Aggiornata dopo il giro di
 conferme del 2026-09-04: le voci risolte sono spuntate, restano solo quelle
@@ -20,19 +20,19 @@ Legenda priorità: 🔴 blocca la pubblicazione · 🟡 consigliato · ⚪ opzio
 - ✅ Foto/avatar: placeholder con iniziali "FA" nell'header di `about.html`
 - ✅ Home: headline hero, sottotitolo, teaser "Chi sono" — testi definitivi scritti
 - ✅ Home: rimosso il badge tech TypeScript e l'intera sezione "Prodotto SaaS & API in arrivo"
-- ✅ Chi Sono: timeline allineata alle 4 tappe reali (Tech11 GmbH → tirocinio LeonardoWeb → apprendistato → impiegato qualificato)
+- ✅ Chi Sono: timeline allineata alle 4 tappe reali (Tech11 GmbH → tirocinio Leonardo Web → apprendistato → impiegato qualificato)
 - ✅ Chi Sono: specializzazione "Informatica e Telecomunicazioni" nella sezione Formazione
 - ✅ Chi Sono: Core Skills ricategorizzate sullo stack reale (no TypeScript/Docker/EF Core non confermati)
 - ✅ CV: date Tech11 GmbH corrette — Ago 2021 (1 mese) + Lug–Ago 2022 (2 mesi), non più "Giu–Ago 2023"
 - ✅ CV: diploma "Informatica e Telecomunicazioni", anni 2018–2023 confermati
 - ✅ CV: data di aggiornamento → Settembre 2026
-- ✅ Contatti: stato disponibilità aggiornato ("Impiegato full-time come Full Stack Developer in LeonardoWeb")
+- ✅ Contatti: stato disponibilità aggiornato ("Impiegato full-time come Full Stack Developer in Leonardo Web")
 - ✅ Contatti: **form di contatto rimosso del tutto** (nessuna raccolta dati) — sostituito da una card con email/LinkedIn/località; di conseguenza non serve più una privacy policy dedicata
 
 ## Nuova sezione aggiunta: Progetti (`progetti.html`)
 
 Pagina di portfolio aggiunta al menu (tra "Chi Sono" e "Curriculum"), con 3 card:
-- una card reale ("iamfrabby.it — Portfolio personale", questo stesso sito)
+- una card reale ("frabby.dev — Portfolio personale", questo stesso sito)
 - due card segnaposto ("Progetto professionale" / "Progetto personale") con testo che spiega che sono in arrivo
 
 ## Ancora aperte
@@ -42,6 +42,6 @@ Pagina di portfolio aggiunta al menu (tra "Chi Sono" e "Curriculum"), con 3 card
 - ⬜ **Link reale al PDF del CV** — resta `#` finché non lo prepari
 - ⬜ **Foto reale** al posto dell'avatar placeholder "FA" quando sarà pronta
 - ⬜ **Certificazioni/corsi aggiuntivi** — nessuno al momento; richiesta di consigli su corsi online da seguire (risposta fornita in chat, non ancora aggiunta al sito)
-- ⬜ **Favicon definitivo**, hosting/DNS di iamfrabby.it, eventuale analytics privacy-friendly — opzionali, quando pronto
+- ⬜ **Favicon definitivo**, hosting/DNS di frabby.dev, eventuale analytics privacy-friendly — opzionali, quando pronto
 - ⬜ **Progetto professionale** in `progetti.html` — quando avrai un lavoro presentabile (screenshot, stack, eventuale link), sostituisce la card segnaposto
 - ⬜ **Progetto personale** in `progetti.html` — idem, quando avrai un side project da mostrare

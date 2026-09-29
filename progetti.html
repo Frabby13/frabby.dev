@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Progetti · iamfrabby.it</title>
-  <meta name="description" content="Una selezione dei progetti di Frabby, Full Stack Developer in .NET, C# e JavaScript: dal portfolio personale ai lavori professionali e personali in arrivo." />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23090b12'/%3E%3Ctext x='50%25' y='58%25' font-family='monospace' font-size='34' font-weight='700' fill='%234ade80' text-anchor='middle'%3E%3C/%3E%3C/text%3E%3C/svg%3E" />
+  <title>Progetti · frabby.dev</title>
+  <meta name="description" content="I progetti di Francesco Alberto (Frabby): il sito di Gregory Jewels, questo sito e i lavori che posso mostrare in pubblico." />
+  <link rel="canonical" href="https://frabby.dev/progetti.html" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230b0d0f'/%3E%3Ctext x='50%25' y='58%25' font-family='monospace' font-size='34' font-weight='700' fill='%234ade80' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E" />
 
   <!-- Open Graph / social share preview -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Progetti · iamfrabby.it" />
-  <meta property="og:description" content="Una selezione dei progetti di Frabby, Full Stack Developer in .NET, C# e JavaScript." />
-  <meta property="og:image" content="./assets/img/og-cover.svg" />
+  <meta property="og:url" content="https://frabby.dev/progetti.html" />
+  <meta property="og:title" content="Progetti · frabby.dev" />
+  <meta property="og:description" content="I progetti di Francesco Alberto (Frabby): siti e applicazioni web." />
+  <meta property="og:image" content="https://frabby.dev/assets/img/og-cover.svg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <script>
     try { var t = sessionStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
@@ -25,177 +27,115 @@
 </head>
 <body class="bg-ink text-text font-sans antialiased">
 
-  <header class="sticky top-0 z-50 border-b border-border-soft/80 bg-ink/95">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-      <a href="index.html" class="flex items-center gap-2 font-mono text-lg font-semibold tracking-tight text-text">
-        <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-2 text-accent">&lt;/&gt;</span>
-        <span>iamfrabby<span class="text-accent">.it</span></span>
+  <header class="sticky top-0 z-50 border-b border-border bg-ink">
+    <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-3 text-sm font-medium lg:px-8">
+      <a href="index.html" class="flex items-center gap-2 font-mono text-lg font-semibold tracking-tight text-text" aria-label="frabby.dev, home">
+        <span aria-hidden="true" class="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-2 text-accent">&lt;/&gt;</span>
+        <span>frabby<span class="text-accent">.dev</span></span>
       </a>
 
-      <nav aria-label="Navigazione principale" class="hidden items-center gap-8 md:flex">
-        <a href="index.html" data-nav-link class="group relative px-1 py-2 text-sm font-medium text-text-dim transition-colors hover:text-text">
-          Home
-          <span class="absolute inset-x-0 -bottom-0.5 h-0.5 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 bg-accent"></span>
-        </a>
-        <a href="about.html" data-nav-link class="group relative px-1 py-2 text-sm font-medium text-text-dim transition-colors hover:text-text">
-          Chi Sono
-          <span class="absolute inset-x-0 -bottom-0.5 h-0.5 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 bg-accent"></span>
-        </a>
-        <a href="progetti.html" aria-current="page" data-nav-link class="group relative px-1 py-2 text-sm font-medium text-text">
-          Progetti
-          <span class="absolute inset-x-0 -bottom-0.5 h-0.5 scale-x-100 transition-transform duration-300 bg-accent"></span>
-        </a>
-        <a href="cv.html" data-nav-link class="group relative px-1 py-2 text-sm font-medium text-text-dim transition-colors hover:text-text">
-          Curriculum
-          <span class="absolute inset-x-0 -bottom-0.5 h-0.5 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 bg-accent"></span>
-        </a>
-        <a href="contact.html" data-nav-link class="group relative px-1 py-2 text-sm font-medium text-text-dim transition-colors hover:text-text">
-          Contatti
-          <span class="absolute inset-x-0 -bottom-0.5 h-0.5 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 bg-accent"></span>
-        </a>
+      <nav aria-label="Navigazione principale" class="hidden items-center gap-6 md:flex">
+        <a href="index.html" data-nav-link class="nav-link">Home</a>
+        <a href="about.html" data-nav-link class="nav-link">Chi sono</a>
+        <a href="progetti.html" aria-current="page" data-nav-link class="nav-link">Progetti</a>
+        <a href="cv.html" data-nav-link class="nav-link">Curriculum</a>
+        <a href="contact.html" data-nav-link class="nav-link">Contatti</a>
       </nav>
 
       <div class="flex items-center gap-3">
-        <button type="button" data-theme-toggle aria-label="Cambia tema chiaro/scuro"
-          class="flex h-10 w-10 items-center justify-center rounded-lg border border-border text-text-dim transition-colors hover:border-accent hover:text-accent">
-          <svg data-theme-icon="sun" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-          <svg data-theme-icon="moon" xmlns="http://www.w3.org/2000/svg" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <button type="button" role="switch" aria-checked="true" aria-label="Tema scuro" data-theme-toggle class="theme-switch">
+          <svg data-theme-icon="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg data-theme-icon="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-        <a href="contact.html" class="hidden md:inline-block rounded-full px-5 py-2 text-sm font-semibold bg-accent text-on-accent transition-colors hover:bg-accent-hover">
-          Contattami
-        </a>
         <button type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Apri il menu"
-          class="flex h-10 w-10 items-center justify-center rounded-lg border border-border text-text md:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <path d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+          class="rounded-md border border-border px-3 py-1.5 text-sm text-text hover:border-accent hover:text-accent md:hidden">
+          Menu
         </button>
       </div>
     </div>
 
-    <div id="mobile-nav" data-mobile-nav class="hidden flex-col gap-1 border-t border-border-soft px-6 py-4 md:hidden">
-      <a href="index.html" class="rounded-lg px-3 py-2 text-sm font-medium text-text-dim hover:bg-surface-2 hover:text-text">Home</a>
-      <a href="about.html" class="rounded-lg px-3 py-2 text-sm font-medium text-text-dim hover:bg-surface-2 hover:text-text">Chi Sono</a>
-      <a href="progetti.html" aria-current="page" class="rounded-lg px-3 py-2 text-sm font-medium text-text bg-surface-2">Progetti</a>
-      <a href="cv.html" class="rounded-lg px-3 py-2 text-sm font-medium text-text-dim hover:bg-surface-2 hover:text-text">Curriculum</a>
-      <a href="contact.html" class="rounded-lg px-3 py-2 text-sm font-medium text-text-dim hover:bg-surface-2 hover:text-text">Contatti</a>
-      <a href="contact.html" class="mt-2 rounded-full px-4 py-2 text-center text-sm font-semibold bg-accent text-on-accent transition-colors hover:bg-accent-hover">Contattami</a>
+    <!-- Mobile nav panel -->
+    <div id="mobile-nav" data-mobile-nav class="hidden flex-col border-t border-border px-6 py-3 text-sm font-medium md:hidden">
+      <a href="index.html" class="nav-link block py-2">Home</a>
+      <a href="about.html" class="nav-link block py-2">Chi sono</a>
+      <a href="progetti.html" aria-current="page" class="nav-link block py-2">Progetti</a>
+      <a href="cv.html" class="nav-link block py-2">Curriculum</a>
+      <a href="contact.html" class="nav-link block py-2">Contatti</a>
     </div>
   </header>
 
   <main>
-    <section class="relative overflow-hidden px-6 pb-12 pt-20 lg:px-8 lg:pt-28">
-      <div class="reveal mx-auto max-w-3xl text-center">
+    <section class="px-6 pb-12 pt-14 lg:px-8 lg:pt-20">
+      <div class="reveal mx-auto max-w-5xl">
         <p class="font-mono text-sm text-accent">Progetti</p>
-        <h1 class="mt-4 text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-          Una selezione dei miei <span class="text-accent">lavori.</span>
-        </h1>
-        <p class="mx-auto mt-6 max-w-xl text-lg text-text-dim">
-          Alcuni progetti professionali sono coperti da riservatezza aziendale: qui trovi un assaggio di cosa
-          costruisco, in attesa di aggiungere altri lavori condivisibili.
+        <h1 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">I miei progetti</h1>
+        <p class="mt-5 max-w-2xl text-text-dim sm:text-lg">
+          Molti lavori fatti in azienda sono coperti da riservatezza, quindi qui c'è solo quello che posso
+          mostrare. Il resto arriva quando posso condividerlo.
         </p>
       </div>
     </section>
 
-    <section class="reveal px-6 pb-28 lg:px-8">
-      <div class="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <section aria-label="Elenco progetti" class="reveal px-6 pb-24 lg:px-8">
+      <div class="mx-auto max-w-5xl border-b border-border">
+        <!-- Progetto reale: sito freelance per Gregory Jewels -->
+        <article class="grid gap-3 border-t border-border py-8 sm:grid-cols-[8rem_1fr] sm:gap-8">
+          <p class="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-text-faint"><span class="h-2 w-2 rounded-full bg-accent"></span>Online</p>
+          <div>
+            <h2 class="text-lg font-semibold text-text">Gregory Jewels · sito di alta gioielleria</h2>
+            <p class="mt-2 max-w-2xl text-sm text-text-dim">
+              Sito vetrina per un brand di alta gioielleria artigianale: design elegante ispirato al lusso
+              contemporaneo, galleria delle creazioni e form per prenotare una consulenza su misura.
+            </p>
+            <p class="mt-3 font-mono text-xs text-text-faint">HTML · Tailwind CSS · JavaScript</p>
+            <a href="https://gregoryjewels.com" target="_blank" rel="noopener"
+              class="mt-4 inline-block text-sm font-medium text-text underline decoration-accent decoration-2 underline-offset-4 hover:text-accent">
+              Visita gregoryjewels.com →<span class="sr-only"> (si apre in una nuova scheda)</span>
+            </a>
+          </div>
+        </article>
+
         <!-- Progetto reale: questo stesso sito -->
-        <div class="group flex flex-col rounded-2xl border border-border bg-surface-2 p-6 transition-colors hover:border-accent">
-          <div class="flex items-center gap-2">
-            <span class="h-2 w-2 rounded-full bg-accent"></span>
-            <span class="font-mono text-xs uppercase tracking-widest text-text-faint">Live</span>
+        <article class="grid gap-3 border-t border-border py-8 sm:grid-cols-[8rem_1fr] sm:gap-8">
+          <p class="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-text-faint"><span class="h-2 w-2 rounded-full bg-accent"></span>Online</p>
+          <div>
+            <h2 class="text-lg font-semibold text-text">frabby.dev · questo sito</h2>
+            <p class="mt-2 max-w-2xl text-sm text-text-dim">
+              Il sito che stai leggendo: HTML, Tailwind CSS v4 e un po' di JavaScript, senza framework. Il
+              prossimo passo è portarlo su .NET.
+            </p>
+            <p class="mt-3 font-mono text-xs text-text-faint">HTML · JavaScript · Tailwind CSS v4</p>
           </div>
-          <h3 class="mt-4 text-lg font-semibold text-text">iamfrabby.it · Portfolio personale</h3>
-          <p class="mt-2 flex-1 text-sm text-text-dim">
-            Il sito che stai navigando in questo momento: design curato, animazioni scroll-based e contenuti
-            pensati per raccontare il mio percorso da sviluppatore. In fase di porting verso .NET.
-          </p>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="rounded-full border border-border-soft bg-ink-soft px-3 py-1 font-mono text-xs text-text-dim">HTML</span>
-            <span class="rounded-full border border-border-soft bg-ink-soft px-3 py-1 font-mono text-xs text-text-dim">JavaScript</span>
-            <span class="rounded-full border border-border-soft bg-ink-soft px-3 py-1 font-mono text-xs text-text-dim">Tailwind CSS v4</span>
-          </div>
-        </div>
+        </article>
 
         <!-- PLACEHOLDER: sostituisci con un progetto professionale condivisibile (screenshot, stack, link) -->
-        <div class="flex flex-col rounded-2xl border border-dashed border-border-soft bg-surface-2/40 p-6">
-          <div class="flex items-center gap-2">
-            <span class="h-2 w-2 rounded-full bg-warn"></span>
-            <span class="font-mono text-xs uppercase tracking-widest text-text-faint">In arrivo</span>
+        <article class="grid gap-3 border-t border-border py-8 sm:grid-cols-[8rem_1fr] sm:gap-8">
+          <p class="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-text-faint"><span class="h-2 w-2 rounded-full bg-warn"></span>In arrivo</p>
+          <div>
+            <h2 class="text-lg font-semibold text-text-dim">Progetto professionale</h2>
+            <p class="mt-2 max-w-2xl text-sm text-text-faint">
+              Sto scegliendo un lavoro fatto in Leonardo Web che posso mostrare in pubblico. Descrizione, stack ed
+              eventuali screenshot arriveranno qui appena è pronto.
+            </p>
           </div>
-          <h3 class="mt-4 text-lg font-semibold text-text-dim">Progetto professionale</h3>
-          <p class="mt-2 flex-1 text-sm text-text-faint">
-            Sto selezionando un progetto realizzato in LeonardoWeb presentabile pubblicamente: i dettagli
-            (descrizione, stack, eventuali screenshot) arriveranno qui appena pronto.
-          </p>
-        </div>
-
-        <!-- Progetto reale: sito freelance per Gregory Jewels -->
-        <div class="group flex flex-col rounded-2xl border border-border bg-surface-2 p-6 transition-colors hover:border-accent">
-          <div class="flex items-center gap-2">
-            <span class="h-2 w-2 rounded-full bg-accent"></span>
-            <span class="font-mono text-xs uppercase tracking-widest text-text-faint">Live</span>
-          </div>
-          <h3 class="mt-4 text-lg font-semibold text-text">Gregory Jewels · Sito di alta gioielleria</h3>
-          <p class="mt-2 flex-1 text-sm text-text-dim">
-            Sito vetrina per un brand di alta gioielleria artigianale: design elegante ispirato al lusso
-            contemporaneo, galleria lookbook delle creazioni e form di prenotazione consulenze su misura.
-          </p>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="rounded-full border border-border-soft bg-ink-soft px-3 py-1 font-mono text-xs text-text-dim">HTML</span>
-            <span class="rounded-full border border-border-soft bg-ink-soft px-3 py-1 font-mono text-xs text-text-dim">Tailwind CSS</span>
-            <span class="rounded-full border border-border-soft bg-ink-soft px-3 py-1 font-mono text-xs text-text-dim">JavaScript</span>
-          </div>
-          <a href="https://gregoryjewels.com" target="_blank" rel="noopener"
-            class="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-accent">
-            Visita il sito
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M7 17 17 7M7 7h10v10" />
-            </svg>
-          </a>
-        </div>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-border-soft bg-surface/60 px-6 py-14 lg:px-8">
-    <div class="mx-auto max-w-7xl">
-      <div class="grid gap-10 md:grid-cols-4">
-        <div class="md:col-span-2">
-          <a href="index.html" class="flex items-center gap-2 font-mono text-lg font-semibold text-text">
-            <span class="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-2 text-accent">&lt;/&gt;</span>
-            <span>iamfrabby<span class="text-accent">.it</span></span>
-          </a>
-          <p class="mt-4 max-w-sm text-sm text-text-dim">
-            Full Stack Developer: .NET, C# &amp; JavaScript. Costruisco prodotti web curati in ogni dettaglio.
-          </p>
-        </div>
-
-        <div>
-          <p class="font-mono text-xs uppercase tracking-widest text-text-faint">Link rapidi</p>
-          <ul class="mt-4 space-y-2 text-sm">
-            <li><a href="index.html" class="text-text-dim transition-colors hover:text-accent">Home</a></li>
-            <li><a href="about.html" class="text-text-dim transition-colors hover:text-accent">Chi Sono</a></li>
-            <li><a href="progetti.html" class="text-text-dim transition-colors hover:text-accent">Progetti</a></li>
-            <li><a href="cv.html" class="text-text-dim transition-colors hover:text-accent">Curriculum</a></li>
-            <li><a href="contact.html" class="text-text-dim transition-colors hover:text-accent">Contatti</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="font-mono text-xs uppercase tracking-widest text-text-faint">Social &amp; dev</p>
-          <ul class="mt-4 space-y-2 text-sm">
-            <li><a href="https://www.linkedin.com/in/francesco-alberto-352678270" target="_blank" rel="noopener" class="text-text-dim transition-colors hover:text-accent">LinkedIn</a></li>
-            <li><a href="mailto:francesco.alberto13@gmail.com" class="text-text-dim transition-colors hover:text-accent">Email</a></li>
-          </ul>
-        </div>
+  <footer class="border-t border-border bg-surface text-sm text-text-faint">
+    <div class="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-6 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-2">
+        <a href="index.html" class="flex items-center gap-2 font-mono text-base font-semibold tracking-tight text-text" aria-label="frabby.dev, home">
+        <span aria-hidden="true" class="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-2 text-accent">&lt;/&gt;</span>
+        <span>frabby<span class="text-accent">.dev</span></span>
+      </a>
+        <p>Francesco Alberto · Fossano (CN) · © <span data-current-year>2026</span></p>
       </div>
-
-      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border-soft pt-8 sm:flex-row">
-        <p class="text-xs text-text-faint">
-          © <span data-current-year>2026</span> iamfrabby.it · Tutti i diritti riservati.
-        </p>
-      </div>
+      <p class="flex gap-5">
+        <a href="https://www.linkedin.com/in/francesco-alberto-352678270" target="_blank" rel="noopener" class="text-text-dim hover:text-accent">LinkedIn</a>
+        <a href="mailto:francesco.alberto13@gmail.com" class="text-text-dim hover:text-accent">Email</a>
+      </p>
     </div>
   </footer>
 
